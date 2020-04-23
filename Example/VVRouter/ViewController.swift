@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.addTapButton(.blue) {
-            VVRouter.open(url: URL(string: "VV://blue")!, from: self.navigationController)
+            Router.open(url: URL(string: "ssr://blue")!, from: self.navigationController)
         }
     }
 }

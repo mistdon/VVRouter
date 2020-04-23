@@ -1,41 +1,39 @@
 //
-//  VVRouter.swift
-//  VVRouter
+//  Router.swift
+//  Router
 //
-//  Created by shendong on 2020/4/23.
+//  Created by Don.shen on 2020/4/23.
 //
 
 import Foundation
 
-import Foundation
-
-public protocol VVRouterDelegate: AnyObject {
+public protocol RouterDelegate: AnyObject {
     /// intercept router for custom action
     func interceptRouter(url: URLConvertible) -> Bool
 }
-extension VVRouterDelegate {
+extension RouterDelegate {
     func interceptRouter(url: URLConvertible) -> Bool {
         return false
     }
 }
-public protocol VVRouterProtocol: AnyObject {
+public protocol RouterProtocol: AnyObject {
     
     static func router(url: String, params: [AnyObject]) -> UIViewController?
     
-    static func routerActionType(rule: String) -> VVRouterActionType
+    static func routerActionType(rule: String) -> RouterActionType
 }
-public extension VVRouterProtocol where Self: UIViewController {
-    static func routerActionType(rule: String) -> VVRouterActionType {
+public extension RouterProtocol where Self: UIViewController {
+    static func routerActionType(rule: String) -> RouterActionType {
         return .push
     }
 }
-@objc open class VVRouter: NSObject {
+@objc open class Router: NSObject {
     
-    public static let shared = VVRouter()
+    public static let shared = Router()
     
     public weak var rootVC : UIViewController?
     
-    public weak var delegate: VVRouterDelegate?
+    public weak var delegate: RouterDelegate?
     
     /// default scheme name, for scheme open, like "ssr://home"
     public var scheme: String = "ssr"
@@ -43,23 +41,24 @@ public extension VVRouterProtocol where Self: UIViewController {
     final var urlMaps: Dictionary<String, AnyClass> = [:]
     
     public class func fetchClass(key: String) -> AnyClass?{
-        return VVRouter.shared.urlMaps[key]
+        return Router.shared.urlMaps[key]
     }
-    public class func registerRouter(dictionary: Dictionary<String, AnyClass>?) {
+    public class func registerRouters(dictionary: Dictionary<String, AnyClass>?) {
         guard let dict = dictionary else { return }
-        VVRouter.shared.urlMaps = dict
+        Router.shared.urlMaps = dict
     }
     public class func registerRoute(key: String, module: AnyClass) {
-        VVRouter.shared.urlMaps.updateValue(module, forKey: key)
+        
+        Router.shared.urlMaps.updateValue(module, forKey: key)
     }
     public class func removeRoute(key: String) {
-        VVRouter.shared.urlMaps.removeValue(forKey: key)
+        Router.shared.urlMaps.removeValue(forKey: key)
     }
     public class func removeAllRouters(){
-        VVRouter.shared.urlMaps.removeAll()
+        Router.shared.urlMaps.removeAll()
     }
     public class func isNative(url: URL) -> Bool{
-        return url.scheme?.lowercased() == VVRouter.shared.scheme
+        return url.scheme?.lowercased() == Router.shared.scheme
     }
     public class func isWeb(url: URL) -> Bool{
        let scheme = url.scheme?.lowercased()
@@ -70,8 +69,8 @@ public extension VVRouterProtocol where Self: UIViewController {
        }
     }
     @discardableResult
-    public class func open(url: URLConvertible, from: UIViewController? = nil, actionType: VVRouterActionType = .none) -> Bool {
-        if let res = VVRouter.shared.delegate?.interceptRouter(url: url), res == true {
+    public class func open(url: URLConvertible, from: UIViewController? = nil, actionType: RouterActionType = .none) -> Bool {
+        if let res = Router.shared.delegate?.interceptRouter(url: url), res == true {
             return false
         }
         let originUrl = try? url.asURL()
@@ -82,10 +81,10 @@ public extension VVRouterProtocol where Self: UIViewController {
             path = path.replacingOccurrences(of: "//", with: "/")
         }
         var params = [AnyObject]()
-        var moduleType = VVRouter.fetchClass(key: path as String) as? VVRouterProtocol.Type
+        var moduleType = Router.fetchClass(key: path) as? RouterProtocol.Type
         var routerRule = path
         if moduleType == nil {
-            for p in VVRouter.shared.urlMaps.keys{
+            for p in Router.shared.urlMaps.keys{
                 let regular = try! NSRegularExpression(pattern: p, options: .caseInsensitive) as NSRegularExpression
                 let match = regular.firstMatch(in: path as String, options: .reportCompletion, range: NSMakeRange(0, path.count))
                 if match == nil { continue }
@@ -98,7 +97,7 @@ public extension VVRouterProtocol where Self: UIViewController {
                         }
                     }
                     routerRule = p
-                    moduleType = VVRouter.fetchClass(key: p as String) as? VVRouterProtocol.Type
+                    moduleType = Router.fetchClass(key: path) as? RouterProtocol.Type
                     break
                 }
             }
@@ -107,13 +106,13 @@ public extension VVRouterProtocol where Self: UIViewController {
             return false
         }
         let module = resModuleType.router(url: routerRule as String , params: params)
-        var type: VVRouterActionType
+        var type: RouterActionType
         if actionType != .none {
             type = actionType
         } else {
             type = resModuleType.routerActionType(rule: actionType.rawValue)
         }
-        VVRouterAction.routerAction(fromViewController: from, toViewController: module, type: type)
+        RouterAction.routerAction(fromViewController: from, toViewController: module, type: type)
         return true
     }
 }

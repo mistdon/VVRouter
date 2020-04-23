@@ -1,15 +1,15 @@
 //
-//  VVRouterAction.swift
-//  VVRouter
+//  RouterAction.swift
+//  Router
 //
-//  Created by shendong on 2020/4/23.
+//  Created by Don.shen on 2020/4/23.
 //
 
 import Foundation
 
 @objc public extension UIViewController{
     private struct AssociateKeys{
-        static var typeStringKey = "typeStringKey.vvrouter"
+        static var typeStringKey = "typeStringKey.router"
     }
     @objc var actionStringType: String?{
         set{
@@ -20,7 +20,7 @@ import Foundation
         }
     }
 }
-@objc public enum VVRouterActionType: Int, RawRepresentable {
+@objc public enum RouterActionType: Int, RawRepresentable {
     case none = -1, push, present
     public typealias RawValue = String
     public var rawValue: RawValue{
@@ -48,10 +48,10 @@ import Foundation
         }
     }
 }
-@objc public class VVRouterAction: NSObject{
-    @objc public class func routerAction(fromViewController: UIViewController?, toViewController: UIViewController?, type: VVRouterActionType){
+@objc public class RouterAction: NSObject{
+    @objc public class func routerAction(fromViewController: UIViewController?, toViewController: UIViewController?, type: RouterActionType){
         var from = fromViewController
-        if from == nil { from = VVRouter.shared.rootVC }
+        if from == nil { from = Router.shared.rootVC }
         guard let fromVC = from, let  toVC = toViewController else { return }
         if toVC is UINavigationController{
             let navi: UINavigationController = toVC as! UINavigationController

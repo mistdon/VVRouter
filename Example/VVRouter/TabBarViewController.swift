@@ -1,6 +1,6 @@
 //
 //  TabBarViewController.swift
-//  VVRouter_Example
+//  Router_Example
 //
 //  Created by mistdon on 2020/4/22.
 //  Copyright © 2020 CocoaPods. All rights reserved.
@@ -19,10 +19,10 @@ class TabBarViewController: UITabBarController {
         demo.tabBarItem = UITabBarItem(title: "第二", image: nil, selectedImage: nil)
         self.viewControllers = [home, demo]
         
-        VVRouter.shared.delegate = self
+        Router.shared.delegate = self
     }
 }
-extension TabBarViewController: VVRouterDelegate {
+extension TabBarViewController: RouterDelegate {
     func interceptRouter(url: URLConvertible) -> Bool {
         let _url = try? url.asURL()
         if _url?.absoluteString == "/tab_1"{

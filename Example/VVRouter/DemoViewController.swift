@@ -1,6 +1,6 @@
 //
 //  DemoViewController.swift
-//  VVRouter_Example
+//  Router_Example
 //
 //  Created by mistdon on 2020/4/22.
 //  Copyright © 2020 CocoaPods. All rights reserved.
@@ -40,23 +40,23 @@ class DemoViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .lightText
         self.addTapButton(.red) {
-            VVRouter.open(url: URL(string: "ssr://red/112")!, from: self.navigationController)
+            Router.open(url: URL(string: "ssr://red/112")!, from: self.navigationController)
         }
     }
 }
-class BlueViewController: UIViewController, VVRouterProtocol {
+class BlueViewController: UIViewController, RouterProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
         self.addTapButton(.white) {
-            VVRouter.open(url: "/tab_1")
+            Router.open(url: "/tab_1")
         }
     }
     static func router(url: String, params: [AnyObject]) -> UIViewController? {
         return BlueViewController()
     }
 }
-class RedViewController: UIViewController, VVRouterProtocol {
+class RedViewController: UIViewController, RouterProtocol {
     
     var roomId: Int32 = 0
     
@@ -66,7 +66,7 @@ class RedViewController: UIViewController, VVRouterProtocol {
         print("redVC.roomId = \(roomId)")
         print("actionTypeStyle = \(String(describing: self.actionStringType))")
         self.addTapButton(.yellow) {
-            VVRouter.open(url:"ssr://yellow/welcome")
+            Router.open(url:"ssr://yellow/welcome")
         }
     }
     static func router(url: String, params: [AnyObject]) -> UIViewController? {
@@ -89,11 +89,11 @@ class YellowViewController: UIViewController {
         view.backgroundColor = .yellow
         print("yellowVC.bookname = \(bookname)")
         self.addTapButton(.red) {
-            VVRouter.open(url: "/blue", from: self, actionType: .present)
+            Router.open(url: "/blue", from: self, actionType: .present)
         }
     }
 }
-extension YellowViewController: VVRouterProtocol {
+extension YellowViewController: RouterProtocol {
     static func router(url: String, params: [AnyObject]) -> UIViewController? {
         if url == "/yellow/(\\S+)" {
             let yellowVC = YellowViewController()
