@@ -1,0 +1,16 @@
+PODS:
+  - VVRouter (0.1.0)
+
+DEPENDENCIES:
+  - VVRouter (from `../`)
+
+EXTERNAL SOURCES:
+  VVRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VVRouter: 21e41c6e84695a84d697d368cda4b8c0b7aad24d
+
+PODFILE CHECKSUM: b7b396da5aff15cef2bd583fbfedf433cf00fe60
+
+COCOAPODS: 1.9.1
