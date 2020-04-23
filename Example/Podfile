@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VVRouter_Example' do
+  pod 'VVRouter', :path => '../'
+
+  target 'VVRouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
