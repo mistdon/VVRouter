@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		057B503575D874374063D0132AB51856 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		26D0B89506E4AC1419232EE94068410C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AF377251948C38DD1FD9B66FB7BA99 /* Router.swift */; };
+		26D0B89506E4AC1419232EE94068410C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08FC327F66E6900B6BC0DC5A150D9C0 /* Router.swift */; };
 		2AAD5D2F22AD7CE791FCC0972BC15348 /* Pods-VVRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ED586724B3CDFCC3574E7231FC0E33 /* Pods-VVRouter_Example-dummy.m */; };
-		2D0C2292135FED2ACC12F498A5B4309C /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27058951250E5C559007272B6B98D54D /* URLConvertible.swift */; };
-		432AF421086DE20E34F23E34138FDEC0 /* VVRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D15CB0A017178CF557A003DA0A4934C /* VVRouter-dummy.m */; };
-		BDC10CFD6E6AE2EF2B41A09C45788164 /* RouterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19755C3F954B0BE578E343FEF89021F /* RouterAction.swift */; };
-		C5E4E9D5C79D0A9ED5FAF577D0972E61 /* VVRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F3233E381222C62FF32D75E703D848 /* VVRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D0C2292135FED2ACC12F498A5B4309C /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894A46FADCFA5F4FCD09D812AC5B8DE /* URLConvertible.swift */; };
+		432AF421086DE20E34F23E34138FDEC0 /* VVRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CE03FAB1C4AA423F46957240D142D5 /* VVRouter-dummy.m */; };
+		BDC10CFD6E6AE2EF2B41A09C45788164 /* RouterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8A1E9F0239D147A960280DCA57506 /* RouterAction.swift */; };
+		C5E4E9D5C79D0A9ED5FAF577D0972E61 /* VVRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E3332E87C2B8C66459CF6C2D1BA5AE /* VVRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D22FC7590C93CEBF211CBA89ACDA6D05 /* Pods-VVRouter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0774194BF0F89D1A3B5C9FAAB709FC /* Pods-VVRouter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4B07A97B7CC94068339F6304C76AEC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -29,31 +29,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01AF377251948C38DD1FD9B66FB7BA99 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = VVRouter/Classes/Router.swift; sourceTree = "<group>"; };
+		07D8A1E9F0239D147A960280DCA57506 /* RouterAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouterAction.swift; path = VVRouter/Classes/RouterAction.swift; sourceTree = "<group>"; };
 		0F83DB22806C3C431C55DB1C20864669 /* Pods_VVRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VVRouter_Example.framework; path = "Pods-VVRouter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1894A46FADCFA5F4FCD09D812AC5B8DE /* URLConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLConvertible.swift; path = VVRouter/Classes/URLConvertible.swift; sourceTree = "<group>"; };
 		1B0774194BF0F89D1A3B5C9FAAB709FC /* Pods-VVRouter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VVRouter_Example-umbrella.h"; sourceTree = "<group>"; };
-		25F3233E381222C62FF32D75E703D848 /* VVRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VVRouter-umbrella.h"; sourceTree = "<group>"; };
-		27058951250E5C559007272B6B98D54D /* URLConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLConvertible.swift; path = VVRouter/Classes/URLConvertible.swift; sourceTree = "<group>"; };
-		2D10EEBED22D2535AA6BA8117E4FFD97 /* VVRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VVRouter.modulemap; sourceTree = "<group>"; };
-		2DA83CA62331B4255C77644FE233847B /* VVRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VVRouter-Info.plist"; sourceTree = "<group>"; };
+		1DA7BCD3555100EDEAEFE01B57E38227 /* VVRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VVRouter.debug.xcconfig; sourceTree = "<group>"; };
+		2651CB908EFD9E13197294F01FBEFE5E /* VVRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VVRouter.modulemap; sourceTree = "<group>"; };
+		27CE03FAB1C4AA423F46957240D142D5 /* VVRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VVRouter-dummy.m"; sourceTree = "<group>"; };
+		31E3332E87C2B8C66459CF6C2D1BA5AE /* VVRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VVRouter-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		38ED586724B3CDFCC3574E7231FC0E33 /* Pods-VVRouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VVRouter_Example-dummy.m"; sourceTree = "<group>"; };
-		3D15CB0A017178CF557A003DA0A4934C /* VVRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VVRouter-dummy.m"; sourceTree = "<group>"; };
+		3C27D7C5438C83275EC3B3F681FE7534 /* VVRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VVRouter-prefix.pch"; sourceTree = "<group>"; };
 		3DC37050970E28F2FFDEFABDA331C71E /* Pods-VVRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VVRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		411B4A24887169515E0DEEC6DEF68B5D /* VVRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VVRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4D76214D01AB876283456EC9109D53AB /* Pods-VVRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VVRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		74C20BD4E51898EDCF27E5035A052819 /* Pods-VVRouter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VVRouter_Example-Info.plist"; sourceTree = "<group>"; };
-		75C71C9762C67FBC04D7122E8EFF1119 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		799DA82A290DB47BFD62A3C13E71E605 /* VVRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VVRouter.xcconfig; sourceTree = "<group>"; };
 		7CDD1D3284A264C7928D902CC345303C /* Pods-VVRouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VVRouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A84B51282B19646E207D83AE05E184C2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B08FC327F66E6900B6BC0DC5A150D9C0 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = VVRouter/Classes/Router.swift; sourceTree = "<group>"; };
+		B5B4452D4F5FE2A99E41E1A3D82524AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		BA135967F0D9F3CC8E15DD3143737620 /* Pods-VVRouter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VVRouter_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C19755C3F954B0BE578E343FEF89021F /* RouterAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouterAction.swift; path = VVRouter/Classes/RouterAction.swift; sourceTree = "<group>"; };
+		BC6D927F614DEDFB31D475C3DC59497A /* VVRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VVRouter.release.xcconfig; sourceTree = "<group>"; };
 		DAFF9D68F23E034F16E53126A406ADC6 /* Pods-VVRouter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VVRouter_Example.modulemap"; sourceTree = "<group>"; };
+		E032668F341EF7905A274BA4BAD43902 /* VVRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VVRouter-Info.plist"; sourceTree = "<group>"; };
 		E1C831E5A71FF68E3D31D55A1A2B1EF3 /* Pods-VVRouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VVRouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E6B035009D6DEE0A931D568F566C0E3A /* VVRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VVRouter-prefix.pch"; sourceTree = "<group>"; };
 		EB35042079B1F0001D5D7D97C2854FA1 /* VVRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VVRouter.framework; path = VVRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F13408765D4E53FF2D045300E0A86511 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F9D7916FE8DFAD4D5739B5BA7EC2D1AF /* VVRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VVRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,16 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04EF3C28D798B83B71033622B0AE0483 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F13408765D4E53FF2D045300E0A86511 /* LICENSE */,
-				75C71C9762C67FBC04D7122E8EFF1119 /* README.md */,
-				411B4A24887169515E0DEEC6DEF68B5D /* VVRouter.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		41B7239036445951AFE38EA57CD0E7DD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,31 +102,14 @@
 			path = "Target Support Files/Pods-VVRouter_Example";
 			sourceTree = "<group>";
 		};
-		9484E565FDD732B693D6007165A58F3E /* Support Files */ = {
+		BFDAE341D23E19EA610FC7478750CEB7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				2D10EEBED22D2535AA6BA8117E4FFD97 /* VVRouter.modulemap */,
-				799DA82A290DB47BFD62A3C13E71E605 /* VVRouter.xcconfig */,
-				3D15CB0A017178CF557A003DA0A4934C /* VVRouter-dummy.m */,
-				2DA83CA62331B4255C77644FE233847B /* VVRouter-Info.plist */,
-				E6B035009D6DEE0A931D568F566C0E3A /* VVRouter-prefix.pch */,
-				25F3233E381222C62FF32D75E703D848 /* VVRouter-umbrella.h */,
+				B5B4452D4F5FE2A99E41E1A3D82524AA /* LICENSE */,
+				A84B51282B19646E207D83AE05E184C2 /* README.md */,
+				F9D7916FE8DFAD4D5739B5BA7EC2D1AF /* VVRouter.podspec */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/VVRouter";
-			sourceTree = "<group>";
-		};
-		BBE348960F6CFD88418A97DE826F3CFB /* VVRouter */ = {
-			isa = PBXGroup;
-			children = (
-				01AF377251948C38DD1FD9B66FB7BA99 /* Router.swift */,
-				C19755C3F954B0BE578E343FEF89021F /* RouterAction.swift */,
-				27058951250E5C559007272B6B98D54D /* URLConvertible.swift */,
-				04EF3C28D798B83B71033622B0AE0483 /* Pod */,
-				9484E565FDD732B693D6007165A58F3E /* Support Files */,
-			);
-			name = VVRouter;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -165,6 +139,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D81A25F1BD840E62759DD3B7606BA173 /* VVRouter */ = {
+			isa = PBXGroup;
+			children = (
+				B08FC327F66E6900B6BC0DC5A150D9C0 /* Router.swift */,
+				07D8A1E9F0239D147A960280DCA57506 /* RouterAction.swift */,
+				1894A46FADCFA5F4FCD09D812AC5B8DE /* URLConvertible.swift */,
+				BFDAE341D23E19EA610FC7478750CEB7 /* Pod */,
+				DD7FBE83B43C97394871ED0A960CADD6 /* Support Files */,
+			);
+			name = VVRouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		DAA2B62DC672A83D4BEBD1D446E637C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,10 +161,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DD7FBE83B43C97394871ED0A960CADD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2651CB908EFD9E13197294F01FBEFE5E /* VVRouter.modulemap */,
+				27CE03FAB1C4AA423F46957240D142D5 /* VVRouter-dummy.m */,
+				E032668F341EF7905A274BA4BAD43902 /* VVRouter-Info.plist */,
+				3C27D7C5438C83275EC3B3F681FE7534 /* VVRouter-prefix.pch */,
+				31E3332E87C2B8C66459CF6C2D1BA5AE /* VVRouter-umbrella.h */,
+				1DA7BCD3555100EDEAEFE01B57E38227 /* VVRouter.debug.xcconfig */,
+				BC6D927F614DEDFB31D475C3DC59497A /* VVRouter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/VVRouter";
+			sourceTree = "<group>";
+		};
 		F9D2A50EB55C0363F06C6529EF9203BA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BBE348960F6CFD88418A97DE826F3CFB /* VVRouter */,
+				D81A25F1BD840E62759DD3B7606BA173 /* VVRouter */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -318,38 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		54ABF97BD123520F38DE9CEAD81CE6CB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 799DA82A290DB47BFD62A3C13E71E605 /* VVRouter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/VVRouter/VVRouter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VVRouter/VVRouter-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/VVRouter/VVRouter.modulemap";
-				PRODUCT_MODULE_NAME = VVRouter;
-				PRODUCT_NAME = VVRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		692B0B99F6688A4BB8ECB3F24B5B2782 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DC37050970E28F2FFDEFABDA331C71E /* Pods-VVRouter_Example.release.xcconfig */;
@@ -508,9 +478,41 @@
 			};
 			name = Debug;
 		};
-		A45AE8B017DAA97A3F5D0AE6814573CF /* Debug */ = {
+		B9EB3032193BC9493F84003C63AB3729 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 799DA82A290DB47BFD62A3C13E71E605 /* VVRouter.xcconfig */;
+			baseConfigurationReference = BC6D927F614DEDFB31D475C3DC59497A /* VVRouter.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VVRouter/VVRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VVRouter/VVRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VVRouter/VVRouter.modulemap";
+				PRODUCT_MODULE_NAME = VVRouter;
+				PRODUCT_NAME = VVRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C34A4C1E7099E47B7B7583FA55D38B68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA7BCD3555100EDEAEFE01B57E38227 /* VVRouter.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -596,8 +598,8 @@
 		81385DC95FD0D7336670B50B9BA28C2E /* Build configuration list for PBXNativeTarget "VVRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A45AE8B017DAA97A3F5D0AE6814573CF /* Debug */,
-				54ABF97BD123520F38DE9CEAD81CE6CB /* Release */,
+				C34A4C1E7099E47B7B7583FA55D38B68 /* Debug */,
+				B9EB3032193BC9493F84003C63AB3729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

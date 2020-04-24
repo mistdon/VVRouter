@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B28095B24528C1000F883D8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3B28095A24528C1000F883D8 /* index.html */; };
 		3B94F9D024518C7200CF4A17 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94F9CC24518C7200CF4A17 /* WebViewController.swift */; };
 		3B94F9D124518C7200CF4A17 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94F9CD24518C7200CF4A17 /* DemoViewController.swift */; };
 		3B94F9D224518C7200CF4A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94F9CE24518C7200CF4A17 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B28095A24528C1000F883D8 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		3B94F9CC24518C7200CF4A17 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3B94F9CD24518C7200CF4A17 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		3B94F9CE24518C7200CF4A17 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				3B94F9CF24518C7200CF4A17 /* TabBarViewController.swift */,
 				3B94F9CE24518C7200CF4A17 /* ViewController.swift */,
 				3B94F9CC24518C7200CF4A17 /* WebViewController.swift */,
+				3B28095A24528C1000F883D8 /* index.html */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				3B28095B24528C1000F883D8 /* index.html in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

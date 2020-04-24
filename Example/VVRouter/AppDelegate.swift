@@ -9,12 +9,6 @@
 import UIKit
 import VVRouter
 
-//extension RouterUrl {
-//    case demo = "/demo"
-//    case blue = "/blue"
-//
-//}
-
 enum RouterUrl : String {
     case demo = "/demo"
     case blue = "/blue"

@@ -1,6 +1,6 @@
 {
   "name": "VVRouter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A powerful swift router library for iOS",
   "description": "A router library for iOS, support route to any ViewController which have been register",
   "homepage": "https://github.com/mistdon/VVRouter",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/mistdon/VVRouter.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "swift_versions": "5.0",
   "requires_arc": true,

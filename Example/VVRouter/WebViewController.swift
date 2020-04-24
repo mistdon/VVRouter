@@ -15,6 +15,8 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let configuration = WKWebViewConfiguration()
+        wkWebView = WKWebView(frame: view.bounds, configuration: configuration)
+        view.addSubview(wkWebView)
     }
 }
